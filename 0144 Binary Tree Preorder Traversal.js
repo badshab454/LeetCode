@@ -10,6 +10,10 @@
  * @param {TreeNode} root
  * @return {number[]}
  */
-var preorderTraversal = function(root) {
+var preorderTraversal = function solution(root) {
+    if (!root) {
+        return [];
+    }
     
+    return [root.val, ...solution(root.left), ...solution(root.right)];
 };
