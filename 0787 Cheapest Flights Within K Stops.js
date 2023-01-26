@@ -7,7 +7,7 @@
  * @return {number}
  */
 var findCheapestPrice = function(n, flights, src, dst, k) {
-    let prices = new Array(n).fill(Infinity); // fill array with infinity except the src
+    let prices = new Array(n).fill(Infinity); // fill array with infinity except the src 
     prices[src] = 0;
     for(let i =0; i < k+1; i++){ 
         let tempPrice = [...prices];  //make a copy of prices and update it and not the actual prices array
